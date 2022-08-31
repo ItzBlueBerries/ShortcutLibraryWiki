@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Welcome
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the Documentation for Shortcut Library. An Slime Rancher Library for making SR Mods using C#, Visual Studio and the game itself obviously. If you would like to continue, just scroll down to get started!
 
-## Commands
+**Resources you'll probably need:**
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- [SRML Wiki]() (Go here to learn to setup your project, etc.)
 
-## Project layout
+- [FrostWiki]() (Definitely useful to know things about SR Modding, etc during all this.)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Secret Styles DLC]() (This is only required if you make Secret Styles.)
+
+- [ShortcutLib]() (The library itself.)
