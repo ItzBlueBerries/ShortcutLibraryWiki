@@ -11,3 +11,17 @@ Welcome to the Documentation for Shortcut Library. An Slime Rancher Library for 
 - [Secret Styles DLC]() (This is only required if you make Secret Styles.)
 
 - [ShortcutLib]() (The library itself.)
+
+## Table of Contents
+
+- 1. [Welcome]()
+
+- 2. [Installation]()
+
+- 3. [Assets]()
+
+- 4. [Debugging]()
+
+- 5. [Shortcut]()
+
+- 6. [Credits]()
