@@ -12,4 +12,4 @@ The multiple `\` is important! Otherwise it may not work properly, besides using
 
 This method is useful for mods that require assets to be modified from outside the .dll, excluding embedded resources or asset bundles. Although be careful with this as normal players can modify these files to their desire.
 
-Return to **[Welcome]()**.
+Return to **[Welcome](https://itzblueberries.github.io/ShortcutLibraryWiki/)**.
