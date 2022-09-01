@@ -203,9 +203,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Installation
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#downloading" class="md-nav__link">
+    Downloading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-as-reference" class="md-nav__link">
+    Adding as Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-it-into-a-file" class="md-nav__link">
+    Importing it into a file
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -279,6 +324,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#downloading" class="md-nav__link">
+    Downloading
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-as-reference" class="md-nav__link">
+    Adding as Reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-it-into-a-file" class="md-nav__link">
+    Importing it into a file
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -292,9 +366,15 @@
 
 
 <h1 id="installation">Installation</h1>
-<ul>
-<li>Installation</li>
-</ul>
+<p>This is where you shall learn how to install <a href="https://www.nexusmods.com/slimerancher/mods/395">ShortcutLib</a> to your modding project! This tutorial will be assuming you have already setup your project with the tutorial from the <a href="https://github.com/veesusmikelheir/SRML/wiki">SRML Wiki</a>. Skimming through the <a href="https://frostdracony.github.io/">FrostWiki</a> wouldn't hurt either. The installation process should be quick though! If you've created your project correctly, you should be fine.</p>
+<h2 id="downloading">Downloading</h2>
+<p>If you have not yet, make sure to download <a href="https://www.nexusmods.com/slimerancher/mods/395">ShortcutLib</a> from NexusMods. Go to files and download either the <code>7z</code> or <code>Zip</code> download. Both of them are the same, just different file extensions for extracting.</p>
+<p>If you have already done this, you can skip ahead to adding it as a reference to your project.</p>
+<h2 id="adding-as-reference">Adding as Reference</h2>
+<p>Once you have successfully extracted the library, it will have a <code>.dll</code> file. This file is the library itself, and has to be added as a reference to your project! The same way you added <code>SRML</code> or your <code>Assembly-CSharp</code> files to your project references, add the <code>.dll</code> for the library there. This should give you access to ShortcutLib in your modding project now, and you can begin using it.</p>
+<h2 id="importing-it-into-a-file">Importing it into a file</h2>
+<p>Just in case you aren't familiar with this yet, importing things are easy. Just use <code>using;</code> + namespace name. For using ShortcutLib, just do <code>using ShortcutLib;</code>. If you want to save the hassle of using <code>Shortcut.Other ..</code> or somewhere along the lines. You could do <code>using static ShortcutLib.Shortcut;</code>. This would let you be able to use the classes without <code>Shortcut</code> in front of it, easy! Now that you have done everything for importing it into your project, you can start using the library to what your mod desires!</p>
+<p>Return to <strong><a href="https://itzblueberries.github.io/ShortcutLibraryWiki/">Welcome</a></strong>.</p>
 
 
 
