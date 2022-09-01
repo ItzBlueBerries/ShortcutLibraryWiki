@@ -1,13 +1,10 @@
 site_name: ShortcutLibrary Wiki
-repo_url: https://github.com/ItzBlueBerries/ShortcutLibrary
-repo_name: ShortcutLibraryWiki Github
+repo_url: https://github.com/ItzBlueBerries/ShortcutLibraryWiki
+repo_name: The Wiki Github
 
 theme:
   name: material
-
-  palette:
-    primary: amber
-
+  
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
