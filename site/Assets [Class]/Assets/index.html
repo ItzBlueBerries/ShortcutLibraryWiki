@@ -318,11 +318,11 @@
 <p>One of the very interesting things that ShortcutLib gives you is a way to load assets/images from outside your .dll file!
 Its very simple to use, all you have to do is specify a path. It'll automatically link to the <code>Slime Rancher</code> game folder.</p>
 <ul>
-<li><strong>Code Example</strong></li>
+<li><strong>Code Example</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">ShortcutLib</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">Assets</span><span class="p">.</span><span class="n">LoadAsset</span><span class="p">(</span><span class="s">&quot;ShortcutAssets\\images\\shortcutLibraryIcon.png&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></li>
 </ul>
-<pre><code class="language-cs">using ShortcutLib;
-Assets.LoadAsset(&quot;ShortcutAssets\\images\\shortcutLibraryIcon.png&quot;);
-</code></pre>
 <p>The multiple <code>\</code> is important! Otherwise it may not work properly, besides using another way such as the <code>@</code>. Although I recommend <code>\\</code> as it is easy to manage.</p>
 <p>This method is useful for mods that require assets to be modified from outside the .dll, excluding embedded resources or asset bundles. Although be careful with this as normal players can modify these files to their desire.</p>
 <p>Return to <strong><a href="https://itzblueberries.github.io/ShortcutLibraryWiki/">Welcome</a></strong>.</p>
@@ -397,7 +397,7 @@ Assets.LoadAsset(&quot;ShortcutAssets\\images\\shortcutLibraryIcon.png&quot;);
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
