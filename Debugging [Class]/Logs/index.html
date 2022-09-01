@@ -479,9 +479,9 @@
 
 
 <h1 id="logs">Logs</h1>
-<p>There are quite a few methods for logging/debugging things with ShortcutLib! Lets start with the logs, shall we?
-<code>Note: All logs will appear as a log from ShortcutLib, not your mod.</code></p>
-<h3 id="logcomponentsgameobject-objectprefab-bool-logtofile-true"><code>LogComponents(GameObject objectPrefab, bool logToFile = true)</code></h3>
+<p>There are quite a few methods for logging/debugging things with ShortcutLib! Lets start with the logs, shall we?</p>
+<p><code>Note: All logs will appear as a log from ShortcutLib, not your mod.</code></p>
+<h4 id="logcomponentsgameobject-objectprefab-bool-logtofile-true"><code>LogComponents(GameObject objectPrefab, bool logToFile = true)</code></h4>
 <p>This is for logging the components of a <code>GameObject</code>. It uses foreach loops in order to grab all of them and log them within the <code>SRML Console</code>.</p>
 <ul>
 <li><strong>Code Example</strong>
@@ -492,7 +492,7 @@
 </ul>
 <p>Great for figuring out what components a slime or any other GameObject has without some special Unity Explorer or using the code that was used in the method.
 The <code>Prefab</code> class is also featured in this code block, but is used in the <strong><a href="">Shortcut</a></strong> class. It'll probably be commonly used for getting Slime Prefabs or anything else with a prefab, etc.</p>
-<h3 id="logchildrengameobject-objectprefab-bool-logtofile-true"><code>LogChildren(GameObject objectPrefab, bool logToFile = true)</code></h3>
+<h4 id="logchildrengameobject-objectprefab-bool-logtofile-true"><code>LogChildren(GameObject objectPrefab, bool logToFile = true)</code></h4>
 <p>This is for logging the children of a <code>GameObject</code>. It again uses foreach loops in order to get the children of the <code>GameObject</code> then log them to the <code>SRML Console</code>.</p>
 <ul>
 <li><strong>Code Example</strong>
@@ -503,7 +503,7 @@ The <code>Prefab</code> class is also featured in this code block, but is used i
 </ul>
 <p>This would log the children of the <code>ROOSTER</code> prefab. This could log various things such as its meshes, transforms, etc.
 Once more the <code>Prefab</code> class is featured in this code block, which probably will quite a few times within this page.</p>
-<h3 id="logclasscontentshashsetidentifiableid-idenclass-bool-logtofile-true"><code>LogClassContents(HashSet&lt;Identifiable.Id&gt; idenClass, bool logToFile = true)</code></h3>
+<h4 id="logclasscontentshashsetidentifiableid-idenclass-bool-logtofile-true"><code>LogClassContents(HashSet&lt;Identifiable.Id&gt; idenClass, bool logToFile = true)</code></h4>
 <p>This is for logging the contents of a <code>HashSet</code>. This still uses foreach loops and will log to the <code>SRML Console</code>. Although you may not know what a class is. This will log classes that return <code>Identifiable.Id</code>, such as <code>Identifiable.CHICK_CLASS</code>. Logging the contents from this class would log all the chicks added to that class. You can simply add something to a class by doing <code>Identifiable.CLASS_NAME.Add()</code>.</p>
 <ul>
 <li><strong>Code Example</strong>
@@ -512,7 +512,7 @@ Once more the <code>Prefab</code> class is featured in this code block, which pr
 </code></pre></div></li>
 </ul>
 <p>This would log all the contents from this class, which would mean all the slimes added here. Largos have their own class called the <code>LARGO_CLASS</code>. So you may not find a largo in here, but most likely there. Gordos also use the <code>GORDO_CLASS</code>, so you should find the gordos there.</p>
-<h3 id="logstring-tolog-bool-logtofile-true-bool-isinfo-true-bool-iserror-false-bool-issuccess-false"><code>Log(string toLog, bool logToFile = true, bool isInfo = true, bool isError = false, bool isSuccess = false)</code></h3>
+<h4 id="logstring-tolog-bool-logtofile-true-bool-isinfo-true-bool-iserror-false-bool-issuccess-false"><code>Log(string toLog, bool logToFile = true, bool isInfo = true, bool isError = false, bool isSuccess = false)</code></h4>
 <p>This would log whatever message you give it to log to the <code>SRML Console</code>! All these parameters may seem like much, but they aren't. They simply give you more options for how your log should be. <code>isInfo</code> will log it as an info log, <code>isError</code> will log it as an error log, <code>isSuccess</code> will log it as an successful log. You should know what <code>logToFile</code> does by this point in the page.</p>
 <ul>
 <li><strong>Code Example</strong>
@@ -521,7 +521,7 @@ Once more the <code>Prefab</code> class is featured in this code block, which pr
 </code></pre></div></li>
 </ul>
 <p>This would log the <code>string</code> given. Pretty simple to use, great for debugging things when needed. You could even just log to check if something is running or not! Same goes for some of the other logging methods.</p>
-<h3 id="logfilestring-tolog-bool-isinfo-true-bool-iserror-false-bool-iswarning-false"><code>LogFile(string toLog, bool isInfo = true, bool isError = false, bool isWarning = false)</code></h3>
+<h4 id="logfilestring-tolog-bool-isinfo-true-bool-iserror-false-bool-iswarning-false"><code>LogFile(string toLog, bool isInfo = true, bool isError = false, bool isWarning = false)</code></h4>
 <p>This method is a little bit different, but about the same as the <code>Log</code> method. This time, it won't log to the <code>SRML Console</code> but only the <code>srml.log</code> file located in the games %AppData%.</p>
 <ul>
 <li><strong>Code Example</strong>
