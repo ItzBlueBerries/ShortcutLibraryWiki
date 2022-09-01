@@ -294,9 +294,16 @@
 
 
 <h1 id="loading-outside-assets">Loading Outside Assets</h1>
+<p>One of the very interesting things that ShortcutLib gives you is a way to load assets/images from outside your .dll file!
+Its very simple to use, all you have to do is specify a path. It'll automatically link to the <code>Slime Rancher</code> game folder.</p>
 <ul>
-<li>Assets</li>
+<li><strong>Code Example</strong></li>
 </ul>
+<pre><code class="language-cs">Assets.LoadAsset(&quot;ShortcutAssets\\images\\shortcutLibraryIcon.png&quot;);
+</code></pre>
+<p>The multiple <code>\</code> is important! Otherwise it may not work properly, besides using another way such as the <code>@</code>. Although I recommend <code>\\</code> as it is easy to manage.</p>
+<p>This method is useful for mods that require assets to be modified from outside the .dll, excluding embedded resources or asset bundles. Although be careful with this as normal players can modify these files to their desire.</p>
+<p>Return to <strong><a href="">Welcome</a></strong>.</p>
 
 
 
