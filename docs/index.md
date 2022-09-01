@@ -14,14 +14,14 @@ Welcome to the Documentation for Shortcut Library. An Slime Rancher Library for 
 
 ## Table of Contents
 
-1. **[Welcome]()**
+- **[Welcome]()**
 
-2. **[Installation]()**
+- **[Installation]()**
 
-3. **[Assets]()**
+- **[Assets]()**
 
-4. **[Debugging]()**
+- **[Debugging]()**
 
-5. **[Shortcut]()**
+- **[Shortcut]()**
 
-6. [Credits]()
+- **[Credits]()**
