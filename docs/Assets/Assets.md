@@ -5,6 +5,7 @@ Its very simple to use, all you have to do is specify a path. It'll automaticall
 
 - **Code Example**
 ```cs
+using ShortcutLib;
 Assets.LoadAsset("ShortcutAssets\\images\\shortcutLibraryIcon.png");
 ```
 
