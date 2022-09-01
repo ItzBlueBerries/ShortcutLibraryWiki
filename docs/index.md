@@ -4,24 +4,24 @@ Welcome to the Documentation for Shortcut Library. An Slime Rancher Library for 
 
 **Resources you'll probably need:**
 
-- [SRML Wiki]() (Go here to learn to setup your project, etc.)
+- **[SRML Wiki]()** (Go here to learn to setup your project, etc.)
 
-- [FrostWiki]() (Definitely useful to know things about SR Modding, etc during all this.)
+- **[FrostWiki]()** (Definitely useful to know things about SR Modding, etc during all this.)
 
-- [Secret Styles DLC]() (This is only required if you make Secret Styles.)
+- **[Secret Styles DLC]()** (This is only required if you make Secret Styles.)
 
-- [ShortcutLib]() (The library itself.)
+- **[ShortcutLib]()** (The library itself.)
 
 ## Table of Contents
 
-- 1. [Welcome]()
+1. **[Welcome]()**
 
-- 2. [Installation]()
+2. **[Installation]()**
 
-- 3. [Assets]()
+3. **[Assets]()**
 
-- 4. [Debugging]()
+4. **[Debugging]()**
 
-- 5. [Shortcut]()
+5. **[Shortcut]()**
 
-- 6. [Credits]()
+6. [Credits]()
