@@ -1,6 +1,8 @@
 # Sizes
 
-The Presets Namespace is simply just a namespace that has preset things. There are preset-sizes, preset-cells and maybe some random generating.
+`NOTE: The Presets Namespace is simply just a namespace that has preset things.`
+
+This just contains preset-sizes for certain things, or other random things! Such as sizes for veggies, fruits, vacpacks, etc.
 
 Here is the list of variables provided in the `Sizes` class within the Presets Namespace.
 

@@ -1,5 +1,7 @@
 # Cells
 
+`NOTE: The Presets Namespace is simply just a namespace that has preset things.`
+
 Same thing as the `Sizes` presets, but with cells! There could be plenty of random cells in here, but as of now there is only a few which are a cosmetic pod cell & a fountain cell.
 
 ```cs

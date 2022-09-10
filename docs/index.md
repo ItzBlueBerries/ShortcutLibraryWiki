@@ -18,7 +18,7 @@ Welcome to the Documentation for Shortcut Library. An Slime Rancher Library for 
 
 - **[Installation](https://itzblueberries.github.io/ShortcutLibraryWiki/Installation/)**
 
-- **[Presets]()**
+- **[Presets](https://itzblueberries.github.io/ShortcutLibraryWiki/Presets%20%5BNamespace%5D/Cells/)**
 
 - **[Assets](https://itzblueberries.github.io/ShortcutLibraryWiki/Assets%20%5BClass%5D/Assets/)**
 

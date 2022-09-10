@@ -1,5 +1,7 @@
 # Rands
 
+`NOTE: The Presets Namespace is simply just a namespace that has preset things.`
+
 Its similar to the other classes, but instead it has randomly generated variables/methods. Not exactly needed all the time, but may be useful at times.
 
 ```cs
