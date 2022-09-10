@@ -13,7 +13,7 @@
     
     
       
-        <title>Loading Outside Assets - ShortcutLibrary Wiki</title>
+        <title>Assets - ShortcutLibrary Wiki</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#loading-outside-assets" class="md-skip">
+        <a href="#assets" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Loading Outside Assets
+              Assets
             
           </span>
         </div>
@@ -263,9 +263,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Assets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Loading Outside Assets
+        Assets
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loadassetstring-imagepath" class="md-nav__link">
+    LoadAsset(string imagePath)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loadbundlestring-bundlepath" class="md-nav__link">
+    LoadBundle(string bundlePath)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loadresourcetstring-name" class="md-nav__link">
+    LoadResource&lt;T&gt;(string name)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -340,6 +385,54 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          External [Class]
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="External [Class]" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          External [Class]
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../External%20%5BClass%5D/External/" class="md-nav__link">
+        External
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -360,6 +453,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#loadassetstring-imagepath" class="md-nav__link">
+    LoadAsset(string imagePath)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loadbundlestring-bundlepath" class="md-nav__link">
+    LoadBundle(string bundlePath)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loadresourcetstring-name" class="md-nav__link">
+    LoadResource&lt;T&gt;(string name)
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -376,7 +498,9 @@
 
 
 
-<h1 id="loading-outside-assets">Loading Outside Assets</h1>
+<h1 id="assets">Assets</h1>
+<p>There seems to be only a few methods for this class, but can be useful.</p>
+<h3 id="loadassetstring-imagepath"><code>LoadAsset(string imagePath)</code></h3>
 <p>One of the very interesting things that ShortcutLib gives you is a way to load assets/images from outside your .dll file!
 Its very simple to use, all you have to do is specify a path. It'll automatically link to the <code>Slime Rancher</code> game folder.</p>
 <ul>
@@ -387,6 +511,24 @@ Its very simple to use, all you have to do is specify a path. It'll automaticall
 </ul>
 <p>The multiple <code>\</code> is important! Otherwise it may not work properly, besides using another way such as the <code>@</code>. Although I recommend <code>\\</code> as it is easy to manage.</p>
 <p>This method is useful for mods that require assets to be modified from outside the .dll, excluding embedded resources or asset bundles. Although be careful with this as normal players can modify these files to their desire.</p>
+<h3 id="loadbundlestring-bundlepath"><code>LoadBundle(string bundlePath)</code></h3>
+<p>Similar to the <code>LoadAsset()</code> method, you can load Asset Bundles from outside your <code>.dll</code> file with this method. Might be useful in some cases!</p>
+<ul>
+<li><strong>Code Example</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">ShortcutLib</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">Assets</span><span class="p">.</span><span class="n">LoadBundle</span><span class="p">(</span><span class="s">&quot;ShortcutAssets\\bundles\\shortcutBundle&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+<p>Pretty simple to use, just make sure an Asset Bundle exist in that directory! It also automatically links to the <code>Slime Rancher</code> game folder.</p>
+<h3 id="loadresourcetstring-name"><code>LoadResource&lt;T&gt;(string name)</code></h3>
+<p>This method would search throughout the <code>Resources</code> folder of the game and load assets from there! Pretty cool right? Also probably less-file size consuming.</p>
+<ul>
+<li><strong>Code Example</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">ShortcutLib</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">Assets</span><span class="p">.</span><span class="n">LoadResource</span><span class="p">&lt;</span><span class="n">GameObject</span><span class="p">&gt;(</span><span class="s">&quot;FX waterSplat&quot;</span><span class="p">);</span><span class="w"></span>
+</code></pre></div></li>
+</ul>
+<p>Use it wisely, you don't wanna load something that might break your game.. really, there is no telling what's in there.</p>
 <p>Return to <strong><a href="https://itzblueberries.github.io/ShortcutLibraryWiki/">Welcome</a></strong>.</p>
 
   <hr>
