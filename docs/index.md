@@ -18,9 +18,13 @@ Welcome to the Documentation for Shortcut Library. An Slime Rancher Library for 
 
 - **[Installation](https://itzblueberries.github.io/ShortcutLibraryWiki/Installation/)**
 
-- **[Assets](https://itzblueberries.github.io/ShortcutLibraryWiki/Assets/Assets/)**
+- **[Presets]()**
 
-- **[Debugging]()**
+- **[Assets](https://itzblueberries.github.io/ShortcutLibraryWiki/Assets%20%5BClass%5D/Assets/)**
+
+- **[Debugging](https://itzblueberries.github.io/ShortcutLibraryWiki/Debugging%20%5BClass%5D/Logs/)**
+
+- **[External](https://itzblueberries.github.io/ShortcutLibraryWiki/External%20%5BClass%5D/External/)**
 
 - **[Shortcut]()**
 
