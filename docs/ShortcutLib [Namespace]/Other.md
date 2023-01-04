@@ -136,7 +136,18 @@ The past method may create the fountain but it surely doesn't color it. Here is 
 ```cs
 using static ShortcutLib.Shortcut;
 
-Other.ColorFountain(newFountain, Color.grey, Color.grey, Color.grey, Color.grey, Color.grey, Color.grey, Color.grey, Color.grey, Color.grey); // lol I just put all grey, you don't have to though, this shall color it
+Other.ColorFountain(
+    newFountain, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey, 
+    Color.grey
+); // lol I just put all grey, you don't have to though, this shall color it
 ```
 
 Well that's all for over here, pretty useful stuff if you ask me.
