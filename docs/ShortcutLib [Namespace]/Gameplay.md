@@ -20,12 +20,15 @@ GameObject corralPlot = Gameplay.GetPlot(LandPlot.Id.CORRAL); // This would grab
 A little more exciting than the above method, creating a plot upgrade! This will be a bit longer but lets see if you can keep up and understand the example.
 
 I will note that this creates the entry for it to be purchased, does not operate the upgrade. You will have to do that yourself in one or more components.
+
 Getting your own sprite for the icon is also not done by the library. I also did not use the optional parameters.
+
+*NOTE: MAKE SURE YOU HAVE A CUSTOM ENUM FOR THIS (LandPlot.Upgrade) Like almost everything needs a custom enum to belong to.*
 
 - **Code Example**
 ```cs
 using static ShortcutLib.Shortcut;
-LandPlotUpgradeRegistry.UpgradeShopEntry upgradeEntry = Gameplay.CreatePlotUpgrade("Test Upgrade", "This is a complete test!", LandPlot.Upgrade.TEST_UPGRADE, 500, testUpgradeIcon)
+LandPlotUpgradeRegistry.UpgradeShopEntry upgradeEntry = Gameplay.CreatePlotUpgrade("Test Upgrade", "This is a complete test!", Enums.TEST_UPGRADE, 500, testUpgradeIcon)
 ```
 
 That's all for this class! Nothing much besides a few methods, useful though.

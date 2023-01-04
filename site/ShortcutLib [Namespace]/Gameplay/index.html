@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../../Presets%20%5BNamespace%5D/Sizes/">
+        <link rel="prev" href="../EatMap/">
       
       
         <link rel="next" href="../Other/">
@@ -491,6 +491,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../EatMap/" class="md-nav__link">
+        EatMap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -577,6 +591,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Toy/" class="md-nav__link">
+        Toy
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -656,12 +684,13 @@
 </ul>
 <h3 id="createplotupgradestring-upgradename-string-upgradedescription-landplotupgrade-upgradeid-int-upgradecost-sprite-upgradeicon-landplotupgrade-unlockedupgradeid-landplotupgradenone-pediadirectorid-landplotpediaid-pediadirectoridcorral-string-landplotname-corral-string-upgradewarning-this-is-a-default-warning-bool-isavailableenabled-true-bool-isunlockedenabled-false-bool-holdtopurchase-false-bool-shouldwarn-false"><code>CreatePlotUpgrade(string upgradeName, string upgradeDescription, LandPlot.Upgrade upgradeId, int upgradeCost, Sprite upgradeIcon, LandPlot.Upgrade unlockedUpgradeId = LandPlot.Upgrade.NONE, PediaDirector.Id landPlotPediaId = PediaDirector.Id.CORRAL, string landPlotName = "corral", string upgradeWarning = "This is a default warning!!", bool isAvailableEnabled = true, bool isUnlockedEnabled = false, bool holdToPurchase = false, bool shouldWarn = false)</code></h3>
 <p>A little more exciting than the above method, creating a plot upgrade! This will be a bit longer but lets see if you can keep up and understand the example.</p>
-<p>I will note that this creates the entry for it to be purchased, does not operate the upgrade. You will have to do that yourself in one or more components.
-Getting your own sprite for the icon is also not done by the library. I also did not use the optional parameters.</p>
+<p>I will note that this creates the entry for it to be purchased, does not operate the upgrade. You will have to do that yourself in one or more components.</p>
+<p>Getting your own sprite for the icon is also not done by the library. I also did not use the optional parameters.</p>
+<p><em>NOTE: MAKE SURE YOU HAVE A CUSTOM ENUM FOR THIS (LandPlot.Upgrade) Like almost everything needs a custom enum to belong to.</em></p>
 <ul>
 <li><strong>Code Example</strong>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">static</span><span class="w"> </span><span class="n">ShortcutLib</span><span class="p">.</span><span class="n">Shortcut</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">LandPlotUpgradeRegistry</span><span class="p">.</span><span class="n">UpgradeShopEntry</span><span class="w"> </span><span class="n">upgradeEntry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Gameplay</span><span class="p">.</span><span class="n">CreatePlotUpgrade</span><span class="p">(</span><span class="s">&quot;Test Upgrade&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;This is a complete test!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">LandPlot</span><span class="p">.</span><span class="n">Upgrade</span><span class="p">.</span><span class="n">TEST_UPGRADE</span><span class="p">,</span><span class="w"> </span><span class="m">500</span><span class="p">,</span><span class="w"> </span><span class="n">testUpgradeIcon</span><span class="p">)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">LandPlotUpgradeRegistry</span><span class="p">.</span><span class="n">UpgradeShopEntry</span><span class="w"> </span><span class="n">upgradeEntry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Gameplay</span><span class="p">.</span><span class="n">CreatePlotUpgrade</span><span class="p">(</span><span class="s">&quot;Test Upgrade&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;This is a complete test!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Enums</span><span class="p">.</span><span class="n">TEST_UPGRADE</span><span class="p">,</span><span class="w"> </span><span class="m">500</span><span class="p">,</span><span class="w"> </span><span class="n">testUpgradeIcon</span><span class="p">)</span>
 </code></pre></div></li>
 </ul>
 <p>That's all for this class! Nothing much besides a few methods, useful though.</p>
