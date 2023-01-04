@@ -7,6 +7,7 @@ Please know that these methods may not function properly if you do not have Secr
 
 This is a bit more advanced in some areas but its how you create your cosmetic pod then assign your `SlimeAppearance` and `SlimeDefinition` to it.
 Here is an example below, it may be a bit harder to grasp though if you don't have much experience with `C#` which is definitely recommended you do.
+
 *Note: don't put "whatever_position_here" put an actual position. Same for an actual style appearance with "secretStyleAppearance".*
 
 - **Code Example**
