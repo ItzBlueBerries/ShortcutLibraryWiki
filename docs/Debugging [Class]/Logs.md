@@ -68,6 +68,6 @@ Debugging.LogFile("Hello World", false, true, false); // Logs "Hello World" to t
 
 This would log the `string` given to the `srml.log` file. About the same as the previous method as mentioned earlier. If you would like to find out how to locate this file, here is a path: `C:\Users\YOUR_USERNAME\AppData\LocalLow\Monomi Park\Slime Rancher\SRML\srml.log`.
 
-That should be it for logging methods! If you would like to continue, you can move onto **[Other Debugging]()** methods.
+That should be it for logging methods! If you would like to continue, you can move onto **[Other Debugging](https://itzblueberries.github.io/ShortcutLibraryWiki/Debugging%20%5BClass%5D/Other/)** methods.
 
 Return to **[Welcome](https://itzblueberries.github.io/ShortcutLibraryWiki/)**.
