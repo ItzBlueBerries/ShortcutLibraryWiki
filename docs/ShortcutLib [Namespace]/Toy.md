@@ -15,7 +15,7 @@ using static ShortcutLib.Shortcut;
 ToyDefinition someToyDef = Toy.GetToyDef(Identifiable.Id.BEACH_BALL_TOY); // Gets the Beach Ball Toy definition
 ```
 
-### `CreateToy(Identifiable.Id toyPrefab, Identifiable.Id newToyID, string newToyName, Sprite newToyIcon, Material toyMaterial, int toyCost = 500, Vacuumable.Size vacSetting = Vacuumable.Size.LARGE, bool isUpgradableToy = true)`
+<!-- ### `CreateToy(Identifiable.Id toyPrefab, Identifiable.Id newToyID, string newToyName, Sprite newToyIcon, Material toyMaterial, int toyCost = 500, Vacuumable.Size vacSetting = Vacuumable.Size.LARGE, bool isUpgradableToy = true)`
 
 This may be a bit more interesting, you can create toys with this. It may not be much but toys aren't much really, any other editing is done outside of the method.
 
@@ -26,7 +26,7 @@ This may be a bit more interesting, you can create toys with this. It may not be
 using static ShortcutLib.Shortcut;
 
 GameObject newToyObject = Toy.CreateToy(Identifiable.Id.BEACH_BALL_TOY, Enums.NEW_TOY, "New Toy", newToyIcon, newToyMaterial, 100); // Creates a toy that cost 100 newbucks, also upgradable.
-```
+``` -->
 
 And that's all for here, have fun with that if you want.
 

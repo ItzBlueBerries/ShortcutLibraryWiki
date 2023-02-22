@@ -2,10 +2,6 @@ site_name: ShortcutLibrary Wiki
 repo_url: https://github.com/ItzBlueBerries/ShortcutLibraryWiki
 repo_name: The Wiki Github
 
-meta:
-  title: Shortcut Library Wiki
-  description: A wiki / documentation on the C# Library Shortcut Library for Slime Rancher.
-  
 theme:
   name: material
   

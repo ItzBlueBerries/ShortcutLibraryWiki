@@ -41,4 +41,24 @@ Assets.LoadResource<GameObject>("FX waterSplat");
 
 Use it wisely, you don't wanna load something that might break your game.. really, there is no telling what's in there.
 
+By the way, if you want to be able to load icons via your own mod DLL, I'll give you the code below but no examples.
+
+```cs
+public static Texture2D LoadImage(string filename)
+{
+    var a = Assembly.GetExecutingAssembly();
+    var spriteData = a.GetManifestResourceStream(a.GetName().Name + "." + filename);
+    var rawData = new byte[spriteData.Length];
+    spriteData.Read(rawData, 0, rawData.Length);
+    var tex = new Texture2D(1, 1);
+    tex.LoadImage(rawData);
+    tex.filterMode = FilterMode.Bilinear;
+    return tex;
+}
+
+public static Sprite CreateSprite(Texture2D texture) => Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f), 1);
+```
+
+When loading sprites, use `CreateSprite(LoadImage())`. If not and just Texture2D, simply use `LoadImage()` only. Make sure to give your specified path.
+
 Return to **[Welcome](https://itzblueberries.github.io/ShortcutLibraryWiki/)**.
